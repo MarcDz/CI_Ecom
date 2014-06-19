@@ -1,0 +1,7 @@
+##: -----------------------------
+##: Question pour Mr. Pasquelin : 
+##: -----------------------------
+
+- La fonction index() est la fonction executée en premier dans un controller.
+- A quoi nous servent les constructeurs (function __construct())
+- Que mettre dans le Autoload ? (Nom du fichier ou de la fonction ?)

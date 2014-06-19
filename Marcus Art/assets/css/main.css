@@ -1,0 +1,175 @@
+@CHARSET "ISO-8859-1";
+
+/* Font Face
+ * --------------------------------------- */
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.eot?') format('eot'), 
+         url('../fonts/Roboto-Light.woff') format('woff'), 
+         url('../fonts/Roboto-Light.ttf')  format('truetype'),
+         url('../fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.eot?') format('eot'), 
+         url('../fonts/Roboto-Medium.woff') format('woff'), 
+         url('../fonts/Roboto-Medium.ttf')  format('truetype'),
+         url('../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.eot?') format('eot'), 
+         url('../fonts/Roboto-Regular.woff') format('woff'), 
+         url('../fonts/Roboto-Regular.ttf')  format('truetype'),
+         url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+}
+
+/* Custom reset built with Eric Meyer's reset, knacss and on my own
+   http://meyerweb.com/eric/tools/css/reset/
+   http://www.knacss.com/
+   v1.0 | 20130918
+   License: none (public domain)
+* --------------------------------------- */
+
+*                                                               {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, acronym, address, big, cite, code,del, 
+dfn, em, img, ins, kbd, q, s, samp, small, 
+strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, 
+legend, table, caption, tbody, tfoot, thead, 
+tr, th, td, article, aside, canvas, details, 
+embed, figure, figcaption, footer, header, 
+hgroup, menu, nav, output, ruby, section, 
+summary, time, mark, audio, video                               {margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline;}
+                                                                {font-weight:normal; font-size:100%;}
+q:before,q:after                                                {content:'';}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section                      {display:block;}
+
+
+body                                                            {line-height:1.5; font-family:'Roboto-Regular'; color:rgba(0,0,0,.6);}
+ol, ul                                                          {list-style:none; margin:0; padding:0;}
+blockquote, q                                                   {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after          {content:''; content:none;}
+input:focus                                                     {border:none;}
+table                                                           {border-collapse:collapse; border-spacing:0;}
+a                                                               {border:0; text-decoration:none; color:black;}
+img                                                             {border 0; -ms-interpolation-mode:bicubic; vertical-align:middle; }
+hr                                                              {}
+
+/*Font-size */
+html                                                            {font-size:100%;}
+
+/* Float left // Float right */
+
+.fl                                                             {float:left;}
+.fr                                                             {float:right;}
+
+/* Img-R */
+
+.ir                                                             {text-indent: -999em; overflow: hidden;}
+
+/* CLEARFIX */
+
+.cf:before,.cf:after                                            {content:''; display:table;}
+.cf:after                                                       {clear:both;}
+.cf                                                             {*zoom:1;}/*IE6/7*/
+
+/* CLEAR */
+
+.clear                                                          {clear:both;}
+
+/* HIDDEN */
+
+.invisible                                                      {visibility:hidden;}
+.hidden                                                         {display:none !important; visibility:hidden;}
+
+/* Custom CSS
+ * --------------------------------------- */
+
+/*
+|--------------------------------------------------------------------------
+| Header
+|
+*/
+
+header                                                          {padding-left:120px;}
+header > h1                                                     {float:left; margin-top:45px; font-size:2em;}
+header > nav                                                    {float:right; background-color:rgba(0,0,0,.05);}
+header > nav > ul > li                                          {display:inline-block; vertical-align:top; width:125px; height:150px; text-align:center; padding:15px 0;}
+header > nav > ul > li:hover                                    {background-color:#ff9c00;}
+header > nav > ul > li:hover > a                                {opacity:1; color:white;}
+header > nav > ul > li > a                                      {display:block; text-align:center; padding:75px 10px 0; opacity:.8; background:transparent url(../img/nav-sprite.png) no-repeat;}
+header > nav > ul > li:first-of-type > a                        {background-position:-80px 0;}
+header > nav > ul > li:nth-of-type(2) > a                       {background-position:40px 0;}
+header > nav > ul > li:nth-of-type(3) > a                       {background-position:-195px 0;}
+header > nav > ul > li:nth-of-type(4) > a                       {background-position:-333px 0;}
+header > nav > ul > li:last-of-type > a                         {background-position:-473px 0;}
+header > nav > ul > li:first-of-type:hover > a                  {background-position:-80px -110px;}
+header > nav > ul > li:nth-of-type(2):hover > a                 {background-position:40px -110px;}
+header > nav > ul > li:nth-of-type(3):hover > a                 {background-position:-195px -110px;}
+header > nav > ul > li:nth-of-type(4):hover > a                 {background-position:-333px -110px;}
+header > nav > ul > li:last-of-type:hover > a                   {background-position:-473px -110px;}
+
+/*
+|--------------------------------------------------------------------------
+| Footer
+|
+*/
+
+footer                                                          {text-align:center; margin-top:50px; padding:25px 0; background-color:#222;}
+footer > a                                                      {margin:0 20px; color:white;}
+
+/*
+|--------------------------------------------------------------------------
+| Home view
+|
+*/
+
+/* sections */
+#home-view a:hover                                              {opacity:.6;}
+#home-view > section                                            {padding:50px 10%;}
+#home-view > section > article > h2                             {font-size:2.5em; font-family:'Roboto-Light';}
+#home-view > section > article > h2 > em                        {font-family:'Roboto-Medium'; color:#7344b0;}
+
+/* registration */
+#home-view > #registration                                      {position:relative; background-color:#7344b0;}
+#home-view > #registration > img                                {position:absolute; top:50px; right:10%;}
+#home-view > #registration > div                                {width:50%;}
+#home-view > #registration > div > h2                           {text-align:center; margin-bottom:5px; font-size:2.5em; color:white;}
+#home-view > #registration > div > p                            {text-align:center; color:white;}
+#home-view > #registration > div > img                          {display:block; margin:25px auto;}
+#home-view #input-box                                           {margin-top:25px; text-align:center;}
+#home-view #input-box > input,
+#home-view #input-box > button                                  {padding:5px 8px; outline:none;}
+#home-view #input-box > button                                  {cursor:pointer; background-color:#7344b0; border:2px solid white;}
+#home-view #input-box > button:hover                            {background-color:#ff9c00;}
+#home-view #input-box > button > span                           {padding:0 15px; color:white;}
+
+/* overview items */
+#home-view > #overview-items                                    {text-align:center; margin:150px auto 50px;}
+#home-view > #overview-items > #last-items                      {margin-bottom:50px; border-bottom:1px solid rgba(0,0,0,.06); -webkit-box-shadow:-10px 30px 60px -30px rgba(0,0,0,0.15); -moz-box-shadow:-10px 30px 60px -30px rgba(0,0,0,0.15); box-shadow:-10px 30px 60px -30px rgba(0,0,0,0.15);}
+#home-view > #overview-items > #last-items > strong             {font-size:1.4em;}
+#home-view > #overview-items > #last-items > ul                 {margin-bottom:50px;}
+#home-view > #overview-items > #last-items > ul > li            {display:inline-block;}
+#home-view > #overview-items > #last-items > ul > li > a        {display:block; font-size:1.3em;}
+#home-view > #overview-items > #last-items > ul > li > a > img  {display:block; width:200px; margin:70px 25px 15px;}
+
+#home-view > #overview-items > #last-proms                      {margin-top:50px;}
+#home-view > #overview-items > #last-proms > strong             {font-size:1.4em;}
+#home-view > #overview-items > #last-proms > ul                 {text-align:center; margin-top:50px;}
+#home-view > #overview-items > #last-proms > ul > li            {line-height:2em; text-align:left;}
+#home-view > #overview-items > #last-proms > ul > li > a        {position:relative; display:block; text-align:left; width:20%; margin:0 auto; text-indent:3em;}
+#home-view > #overview-items > #last-proms > ul > li> a:before  {position:absolute; top:0; left:-.6em; display:inline-block; content:'•'; height:.5em; font-size:3em; color:#7344b0;}
+
+#home-view > aside                                              {text-align:center;}
+
