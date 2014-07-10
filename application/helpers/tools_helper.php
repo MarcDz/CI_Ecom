@@ -11,7 +11,7 @@ if ( ! function_exists('relativeToAbsolute'))
 {
     function relativeToAbsolute($imgURL, $website = "http://www.mobile-users.net/")
     {
-        return $website.$imgURL;
+        echo $website.$imgURL;
     }
 }
 
