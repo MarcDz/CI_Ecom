@@ -1,9 +1,11 @@
-<?php
+<pre><?php print_r($product); ?></pre>
 
-echo $product['id_produits'];
+<?php echo $product['id_produits'];
 
 echo '<br>';
 
 echo $product['titre'];
+
+echo '<br>';
 
 ?>
